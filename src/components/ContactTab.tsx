@@ -32,7 +32,7 @@ export default function ContactTab() {
 
   // Simulate call duration ticking
   React.useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval> | undefined;
     if (dialSimActive) {
       interval = setInterval(() => {
         setDialDuration(prev => prev + 1);
@@ -40,7 +40,9 @@ export default function ContactTab() {
     } else {
       setDialDuration(0);
     }
-    return () => clearInterval(interval);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
   }, [dialSimActive]);
 
   const formatDuration = (sec: number) => {

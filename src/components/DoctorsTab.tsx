@@ -11,7 +11,6 @@ interface DoctorsTabProps {
 }
 
 export default function DoctorsTab({ 
-  setCurrentTab, 
   openAppointmentModal,
   selectedDoctorFromNav,
   setSelectedDoctorFromNav

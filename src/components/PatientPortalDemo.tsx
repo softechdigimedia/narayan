@@ -238,7 +238,7 @@ export default function PatientPortalDemo() {
               {/* Bar Chart rendered directly as flawless styled responsive SVG */}
               <div className="space-y-4">
                 <div className="h-48 w-full flex items-end justify-between px-2 pt-6">
-                  {activeVitalData.data.map((item, idx) => {
+                  {activeVitalData.data.map((item) => {
                     // Normalize height based on expected ranges
                     let heightPercent = 20;
                     if (vitalType === 0) heightPercent = ((item.value - 50) / 40) * 100; // Heart Rate
