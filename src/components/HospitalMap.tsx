@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Clock, Compass, ExternalLink, HeartHandshake } from 'lucide-react';
+import { MapPin, Phone, Clock, Compass, ExternalLink} from 'lucide-react';
 
 export default function HospitalMap() {
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -138,27 +138,6 @@ export default function HospitalMap() {
             </div>
           </div>
 
-        </div>
-
-        {/* Security / Safe Transit Advice Checklist Banner */}
-        <div className="mt-8 bg-slate-900 text-white p-5 rounded-2xl border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
-          <div className="flex items-center space-x-3.5 text-xs sm:text-sm">
-            <div className="bg-[#086384]/50 p-2.5 rounded-xl border border-white/10 text-white shrink-0">
-              <HeartHandshake className="h-5 w-5" />
-            </div>
-            <div>
-              <p className="font-extrabold text-white uppercase tracking-wider text-[11px] sm:text-xs">Valet Parking & Patient Lounges Available</p>
-              <p className="text-slate-400 text-[10px] sm:text-xs font-semibold leading-relaxed mt-0.5">Complimentary physical valet drop services operate directly inside the Diamond Harbour gate for immediate emergency drop-offs.</p>
-            </div>
-          </div>
-          <button
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="shrink-0 bg-[#086384] hover:bg-sky-700 font-black text-[10px] uppercase tracking-widest text-white px-5 py-3 rounded-xl shadow-3xs cursor-pointer border border-white/10"
-          >
-            Go back to top page ↑
-          </button>
         </div>
 
       </div>

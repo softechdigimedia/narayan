@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, HeartPulse, Brain, Activity, Baby, Stethoscope, ChevronRight, ArrowRight, Video, Landmark, ShieldCheck, Cpu, FlaskConical, CircleAlert, Users, BookOpen, HeartHandshake, Truck, Award, Shield, ChevronDown, CheckCircle2,  Sparkles, Clock,ArrowUp } from 'lucide-react';
+import { Search, HeartPulse, Brain, Activity, Baby, Stethoscope, ChevronRight, ArrowRight, Video, Landmark, ShieldCheck, Cpu, FlaskConical, CircleAlert, Users, BookOpen, HeartHandshake, Truck, Award, Shield, ChevronDown, CheckCircle2,  Sparkles, Clock } from 'lucide-react';
 // import PatientPortalDemo from './PatientPortalDemo';
 import { DEPARTMENTS } from '../data';
 import gsap from 'gsap';
@@ -1167,21 +1167,12 @@ export default function HomeTab({ setCurrentTab, openAppointmentModal, setSelect
       </section>
 
       {/* 5. INTERACTIVE PATIENT PORTAL WIDGET */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <div className="text-center space-y-2 max-w-xl mx-auto">
-          <span className="text-[#086384] font-mono text-xs uppercase tracking-wider font-bold">Secure Personal Access</span>
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-800 uppercase tracking-tight">Patient Portal</h2>
-          <p className="text-slate-500 text-xs sm:text-sm">
-            Access your complete medical history, download lab blueprints, view active medication prescriptions, and manage upcoming specialist consultations safely.
-          </p>
-        </div>
-
         {/* Modular patient portal loading with high fidelity biometrics */}
         {/* <PatientPortalDemo /> */}
-      </section>
+  
 
       {/* 6. VALET PARKING & PATIENT LOUNGES BANNER (Inspired by screenshot - Image 2) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-8 relative z-10 animate-fadeIn">
+      {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-8 relative z-10 animate-fadeIn">
         <div className="bg-[#0c2430] border border-white/10 rounded-2xl sm:rounded-[32px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl text-white">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
             <div className="h-12 w-12 bg-[#086384]/30 text-sky-400 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 border border-white/10 shadow-md">
@@ -1205,7 +1196,7 @@ export default function HomeTab({ setCurrentTab, openAppointmentModal, setSelect
             <ArrowUp className="h-4 w-4" />
           </button>
         </div>
-      </section>
+      </section> */}
 
 
       {/* VR TOUR POPUP SIMULATION MODAL */}
